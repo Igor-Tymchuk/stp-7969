@@ -37,24 +37,17 @@
   border: none;
   background-color: transparent;
 }
-.header-menu-wrapper {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 100%;
-}
 .header-mob-menu {
   font-size: 18px;
   display: flex;
   position: absolute;
   top: 0;
-  visibility: hidden;
+  // visibility: hidden;
   opacity: 0;
-  right: -235px;
+  right: -100px;
   width: 235px;
   height: 100vh;
+  pointer-events: none;
   background-image: linear-gradient(180deg, #8c0209 0%, #1c2d37 100%);
   transition: opacity 250ms ease-in-out, right 250ms ease-in-out;
   & ul {
@@ -67,7 +60,7 @@
   }
 }
 .is-open {
-  visibility: visible;
+  pointer-events: all;
   opacity: 1;
   right: 0;
 }

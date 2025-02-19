@@ -1,5 +1,6 @@
 const openMenuBtn = document.querySelector('.header-burger');
 const mobMenuContainer = document.querySelector('.header-mob-menu');
+const menuWrapper = document.querySelector('.header-wrapper');
 
 openMenuBtn.addEventListener('click', () => {
   if (mobMenuContainer.classList.contains('is-open')) {
