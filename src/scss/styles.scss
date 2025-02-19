@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
 @import 'normalize-scss/sass/normalize';
+
 @import './header.scss';
-@import './vite-promo.scss';
+@import './hero.scss';
+@import './about-game.scss';
+@import './how-to-play.scss';
+@import './features.scss';
+@import './gallery.scss';
+@import './reviews.scss';
+@import './faq.scss';
+@import './footer.scss';
+@import './cookies-modal.scss';
+@import './privacy-policy.scss';
+@import './terms-and-conditions.scss';
+@import './cookies-policy.scss';
 
 :root {
   font-family: 'Open Sans', serif;
@@ -18,6 +30,7 @@
   }
 }
 .container {
+  outline: 1px solid red;
   width: 375px;
   padding: 0 20px;
   @include media(desktop) {
@@ -26,8 +39,15 @@
   }
 }
 section {
-  padding-bottom: 80px;
+  outline: 1px solid yellow;
+  place-items: center;
+  padding-bottom: 60px;
   @include media(desktop) {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
+}
+header,
+footer {
+  outline: 1px solid yellow;
+  place-items: center;
 }

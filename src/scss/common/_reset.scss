@@ -12,6 +12,11 @@ html {
 
 body {
   margin: 0;
+  width: 100%;
+  max-width: 375px;
+  @include media(desktop) {
+    max-width: 1440px;
+  }
 }
 
 h1,
