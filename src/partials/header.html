@@ -1,5 +1,67 @@
 <header class="header">
-  <div class="container">
-    <h2>Header</h2>
+  <div class="container header-container">
+    <a class="header-logo" href="/index.html">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="/img/logo.png 1x, /img/logo-x2.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(max-width: 375px)"
+          srcset="/img/logo-m.png 1x, /img/logo-m-x2.png 2x"
+          type="image/png"
+        />
+        <img
+          class="header-icon"
+          src="/img/logo.png"
+          alt="Icon 'Call Of Victory'"
+          loading="lazy"
+        />
+      </picture>
+    </a>
+    <button class="header-burger" type="button">
+      <svg class="" width="45" height="45">
+        <defs>
+          <linearGradient
+            id="paint0_linear_599_366"
+            x1="22.5"
+            y1="6.5625"
+            x2="22.5"
+            y2="38.4375"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#1C2D37" />
+            <stop offset="1" stop-color="#8C0209" />
+          </linearGradient>
+        </defs>
+        <use
+          href="/img/icons/sprite.svg#menu-fill"
+          fill="url(#paint0_linear_599_366)"
+        ></use>
+      </svg>
+    </button>
+    <div class="header-mob-menu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#about-game">About</a></li>
+        <li><a href="#how-to-play">How to Play</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="header-menu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#about-game">About</a></li>
+        <li><a href="#how-to-play">How to Play</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
   </div>
 </header>
