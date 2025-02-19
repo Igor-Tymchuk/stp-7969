@@ -18,12 +18,12 @@
 :root {
   font-family: 'Open Sans', serif;
   font-size: 16px;
-  line-height: 24px;
   letter-spacing: 0.06em;
   font-weight: 400;
   place-items: center;
   color: $_text_color;
   background-color: $_background_color;
+  @include font(16, 20);
   @include media(desktop) {
     font-size: 24px;
     letter-spacing: 0.04em;
@@ -54,4 +54,8 @@ footer {
   @include media(desktop) {
     padding: 0 40px;
   }
+}
+
+.scroll-lock {
+  overflow: hidden;
 }
