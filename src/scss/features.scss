@@ -23,9 +23,7 @@
     max-width: 335px;
     height: 219px;
   }
-  .img-features {
-    margin-bottom: 20px;
-  }
+
   .small-title-features {
     margin-bottom: 8px;
     font-family: var(--font-family);
@@ -33,6 +31,7 @@
     font-size: 18px;
     letter-spacing: 0.06em;
     color: #fff;
+    margin-top: 20px;
   }
   .text-features {
     text-align: center;
@@ -57,24 +56,21 @@
     justify-content: center;
     align-items: center;
     height: 582px;
-    row-gap: 80px;
-    column-gap: 60px;
+    row-gap: 60px;
+    column-gap: 80px;
     max-width: 1120px;
   }
   .element-features {
     max-width: 300px;
   }
-  .img-features {
-    margin-bottom: 20px;
-  }
+
   .small-title-features {
     margin-bottom: 8px;
     font-size: 24px;
     letter-spacing: 0.04em;
+    line-height: 33px;
   }
   .text-features {
-    max-height: 75px;
-
     font-size: 18px;
   }
 }
