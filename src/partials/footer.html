@@ -1,5 +1,34 @@
 <footer class="footer">
-  <div class="container">
-    <h2>Footer</h2>
+  <div class="footer-cont">
+    <div class="imgs-footer">
+      <picture>
+        <source
+          srcset="./img/logo.png, ./img/logo-x2.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./img/logo-m.png, ./img/logo-m-x2.png 2x"
+          media="(max-width: 1200px)"
+        />
+        <img class="img-footer" src="./img/logo-m.png" width="335" />
+      </picture>
+      <button type="button" class="button-footer"></button>
+    </div>
+
+    <div class="footer-text-container">
+      <p class="first-text-footer cookies">
+        <a href="google.com">Cookies Policy</a><span>/</span>
+      </p>
+      <p class="first-text-footer privacy">
+        <a href="google.com">Privacy Policy</a><span>/</span>
+      </p>
+      <p class="first-text-footer">
+        <a href="google.com">Terms & Conditions</a>
+      </p>
+    </div>
+
+    <p class="second-text-footer">
+      ©2025 victoryarcplay.com, All rights reserved.
+    </p>
   </div>
 </footer>
