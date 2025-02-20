@@ -5,6 +5,7 @@
     image-set(url('/img/hero-back-m.jpg') 1x, url('/img/hero-back-m-x2.jpg') 2x);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   @include media(desktop) {
     padding-top: 215px;
     padding-bottom: 80px;
