@@ -58,3 +58,7 @@ header {
 .scroll-lock {
   overflow: hidden;
 }
+
+body {
+  scrollbar-gutter: stable;
+}
