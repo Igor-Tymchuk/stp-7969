@@ -4,18 +4,11 @@
   justify-content: center;
   align-items: center;
   outline: 1px solid yellow;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    image-set(
-        url('/img/footer-back-m.jpg') 1x,
-        url('/img/footer-back-m-x2.jpg') 2x
-      )
-      no-repeat center / cover;
 }
 
 .footer-text-container {
   display: flex;
   justify-content: center;
-
   max-height: 17px;
   margin-bottom: 11px;
   padding: 0;
@@ -28,12 +21,11 @@ footer {
         url('/img/footer-back-m-x2.jpg') 2x
       )
       no-repeat center / cover;
-  margin: 0 auto;
 }
+
 @media (min-width: 375px) {
   .footer-cont {
     padding: 20px 12.5px 16px;
-
     max-width: 375px;
   }
 
@@ -55,10 +47,11 @@ footer {
     position: relative;
     overflow: hidden;
     height: 60px;
-    background-image: url(../img/icons/Vector.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+    background: image-set(
+        url('/img/icons/Vector.png') 1x,
+        url('/img/icons/Vector@2x.png') 2x
+      )
+      no-repeat center / cover;
     outline: none;
     border-radius: 12px;
     border: 1px solid grey;
@@ -70,7 +63,6 @@ footer {
     font-size: 13px;
     letter-spacing: 0.08em;
     color: #fff;
-
     line-height: 17px;
   }
   .second-text-footer {
@@ -115,7 +107,6 @@ footer {
 
 @media (min-width: 1200px) {
   footer {
-    max-width: 1200px;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       image-set(
           url('/img/footer-back.jpg') 1x,
@@ -124,8 +115,8 @@ footer {
         no-repeat center / cover;
   }
   .footer-cont {
-    padding: 55px 180px;
-
+    margin: 0 auto;
+    padding: 55px 60px;
     max-width: 1200px;
   }
 
@@ -172,17 +163,13 @@ footer {
   .footer-text-container {
     margin-bottom: 56px;
     line-height: 26px;
-
     max-height: 26px;
     justify-content: space-between;
     min-width: 1080px;
   }
+
   .footer-text-container .cookies {
     margin-right: auto;
-
-    span {
-      display: none;
-    }
   }
 
   .button-footer:hover,
