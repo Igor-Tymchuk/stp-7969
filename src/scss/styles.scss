@@ -23,7 +23,7 @@
   place-items: center;
   color: $_text_color;
   background-color: $_background_color;
-  @include font(16, 20);
+  @include font(16, 22);
   @include media(desktop) {
     font-size: 24px;
     letter-spacing: 0.04em;

@@ -1,0 +1,121 @@
+.reviews {
+  padding-left: 0;
+  padding-right: 0;
+}
+.reviews-back {
+  @include media(desktop) {
+    place-items: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      image-set(
+        url('/img/reviews-back.jpg') 1x,
+        url('/img/reviews-back-x2.jpg') 2x
+      );
+    background-size: auto;
+    background-position: center 105px;
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews-title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    margin-bottom: 94px;
+  }
+}
+.reviews-list {
+  margin: 0 auto;
+  width: 309px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include media(desktop) {
+    margin: 0;
+    width: 100%;
+    gap: 40px;
+    padding-bottom: 103px;
+  }
+}
+.reviews-item-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+.reviews-item {
+  min-height: 469px;
+  border-radius: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    image-set(
+      url('/img/review-back-m.jpg') 1x,
+      url('/img/review-back-m-x2.jpg') 2x
+    );
+  background-size: cover;
+  background-position: center top;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  @include media(desktop) {
+    position: relative;
+    background-image: none;
+    background-color: rgba(28, 45, 55, 0.86);
+    width: 969px;
+    min-height: 206px;
+    gap: 20px;
+  }
+  &:nth-child(odd) {
+    .review-dotted-line {
+      display: none;
+      @include media(desktop) {
+        display: flex;
+        width: 132px;
+        height: 97px;
+        position: absolute;
+        background-image: url('/img/icons/left-line.png');
+        top: 0;
+        left: -135px;
+      }
+    }
+  }
+  &:nth-child(even) {
+    .review-dotted-line {
+      display: none;
+      @include media(desktop) {
+        display: flex;
+        width: 152px;
+        height: 106px;
+        position: absolute;
+        background-image: url('/img/icons/right-line.png');
+        top: 0;
+        right: -148px;
+      }
+    }
+  }
+}
+@include media(desktop) {
+  .reviews-item:nth-child(odd) {
+    align-self: flex-end;
+  }
+}
+.review-avatar {
+  max-width: 60px;
+  @include media(desktop) {
+    max-width: 100px;
+  }
+}
+.review-text p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  @include media(desktop) {
+    font-style: 18px;
+  }
+}
