@@ -170,6 +170,9 @@ footer {
 
   .footer-text-container .cookies {
     margin-right: auto;
+    span {
+      display: none;
+    }
   }
 
   .button-footer:hover,
