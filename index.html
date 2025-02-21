@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Call of Victory</title>
     
-    <script type="module" crossorigin src="/stp-7969/assets/main-dab418d7.js"></script>
-    <link rel="stylesheet" href="/stp-7969/assets/main-d92d3cfb.css">
+    <script type="module" crossorigin src="/stp-7969/assets/vendor-38cc1c77.js"></script>
+    <script type="module" crossorigin src="/stp-7969/assets/main-6f7fc775.js"></script>
+    <link rel="stylesheet" href="/stp-7969/assets/main-7a3d03a8.css">
+    <link rel="stylesheet" href="/stp-7969/assets/vendor-ecee2773.css">
   </head>
   <body>
     <header class="header">
@@ -60,7 +62,7 @@
   </div>
 </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
   <div class="container hero-container">
     <div class="hero-title">
       <h1 class="h1">Call of Victory</h1>
@@ -69,13 +71,18 @@
         the ultimate military strategy game!
       </p>
     </div>
-    <button class="hero-button" type="button">
+    <a
+      href="https://play.google.com/store/apps/details?id=com.volvapps.rts2d&hl=en&gl=us"
+      class="hero-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img
         src="/stp-7969/assets/header-g-play-c782940e.png"
         alt="Google Play Button"
         width="210px"
       />
-    </button>
+    </a>
   </div>
 </section>
 
@@ -363,13 +370,97 @@
   </div>
 </section>
 
-    <section class="gallery">
-  <div class="container">
-    <h2>gallery</h2>
+    <section class="gallery" id="gallery">
+  <h2 class="gallery-title">Gallery</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/stp-7969/assets/gallery1-973c12e7.png 1x, /stp-7969/assets/gallery1-x2-81c94f21.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/stp-7969/assets/gallery1-m-b0cf7a20.png 1x, /stp-7969/assets/gallery1-m-x2-e3af597c.png 2x"
+            type="image/png"
+          />
+          <img
+            class="gallery-picture"
+            src="/stp-7969/assets/gallery1-m-b0cf7a20.png"
+            alt="gallery1"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/stp-7969/assets/gallery4-a58f8131.png 1x, /stp-7969/assets/gallery4-x2-8db56fb6.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/stp-7969/assets/gallery4-m-c2d25993.png 1x, /stp-7969/assets/gallery4-m-x2-08235011.png 2x"
+            type="image/png"
+          />
+          <img
+            class="gallery-picture"
+            src="/stp-7969/assets/gallery4-m-c2d25993.png"
+            alt="gallery4"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/stp-7969/assets/gallery3-f103bdfa.png 1x, /stp-7969/assets/gallery3-x2-b5e3de60.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/stp-7969/assets/gallery3-m-1c3b6121.png 1x, /stp-7969/assets/gallery3-m-x2-9f73b7c7.png 2x"
+            type="image/png"
+          />
+          <img
+            class="gallery-picture"
+            src="/stp-7969/assets/gallery3-m-1c3b6121.png"
+            alt="gallery3"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/stp-7969/assets/gallery2-0c6a43f5.png 1x, /stp-7969/assets/gallery2-x2-53c258f0.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/stp-7969/assets/gallery2-m-9578775e.png 1x, /stp-7969/assets/gallery2-m-x2-06d2ff3c.png 2x"
+            type="image/png"
+          />
+          <img
+            class="gallery-picture"
+            src="/stp-7969/assets/gallery2-m-9578775e.png"
+            alt="gallery2"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
   </div>
 </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
   <div class="reviews-back">
     <div class="container">
       <h2 class="reviews-title">Reviews</h2>
