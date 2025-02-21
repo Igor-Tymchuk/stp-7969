@@ -56,12 +56,6 @@
   max-width: 335px;
   max-height: 300px;
 }
-.panel.open {
-  margin-top: 24px;
-  max-height: 500px;
-  overflow-y: auto;
-  transition: 4ms;
-}
 
 .acc-list {
   display: flex;
@@ -89,11 +83,14 @@
     align-items: center;
   }
 
+  .panel.open {
+    margin-top: 24px;
+  }
+
   .acc-text {
     font-size: 24px;
     letter-spacing: 0.04em;
     max-width: 1044px;
     line-height: 33px;
-    max-height: 100px;
   }
 }
