@@ -1,5 +1,89 @@
-<section class="gallery">
-  <div class="container">
-    <h2>gallery</h2>
+<section class="gallery" id="gallery">
+  <h2 class="gallery-title">Gallery</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/img/gallery1.png 1x, /img/gallery1-x2.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/img/gallery1-m.png 1x, /img/gallery1-m-x2.png 2x"
+            type="image/png"
+          />
+          <img
+            class="gallery-picture"
+            src="/img/gallery1-m.png"
+            alt="gallery1"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/img/gallery4.png 1x, /img/gallery4-x2.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/img/gallery4-m.png 1x, /img/gallery4-m-x2.png 2x"
+            type="image/png"
+          />
+          <img
+            class="gallery-picture"
+            src="/img/gallery4-m.png"
+            alt="gallery4"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/img/gallery3.png 1x, /img/gallery3-x2.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/img/gallery3-m.png 1x, /img/gallery3-m-x2.png 2x"
+            type="image/png"
+          />
+          <img
+            class="gallery-picture"
+            src="/img/gallery3-m.png"
+            alt="gallery3"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="/img/gallery2.png 1x, /img/gallery2-x2.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(max-width: 375px)"
+            srcset="/img/gallery2-m.png 1x, /img/gallery2-m-x2.png 2x"
+            type="image/png"
+          />
+          <img
+            class="gallery-picture"
+            src="/img/gallery2-m.png"
+            alt="gallery2"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
   </div>
 </section>
