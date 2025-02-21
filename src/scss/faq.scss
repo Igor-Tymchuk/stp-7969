@@ -33,7 +33,12 @@
   max-height: 0;
   margin-top: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out, margin-top 0.1s ease;
+  transition: 100ms ease-in-out;
+}
+
+.panel.open {
+  margin-top: 24px;
+  max-height: 500px;
 }
 
 .accordion img {
