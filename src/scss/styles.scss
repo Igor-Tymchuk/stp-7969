@@ -37,6 +37,10 @@
   }
 }
 section {
+  scroll-margin-top: 70px;
+  @include media(desktop) {
+    scroll-margin-top: 120px;
+  }
   outline: 1px solid yellow;
   place-items: center;
   padding: 0 20px;
