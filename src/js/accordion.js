@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!isActive) {
         this.classList.add('active');
-        // Adjust maxHeight based on screen width
+
         if (window.innerWidth >= 1200) {
           panel.style.maxHeight = '300px'; // Desktop max height
           panel.style.marginTop = '24px';
