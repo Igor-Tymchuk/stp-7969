@@ -26,22 +26,5 @@ window.matchMedia('(min-width: 1200px)').addEventListener('change', e => {
   mobMenuContainer.classList.remove('is-open');
   document.body.classList.remove('scroll-lock');
   openMenuBtn.classList.remove('open');
-});
-
-//go to selected link in mob.menu
-const menuLinks = document.querySelectorAll('.header-mob-menu a');
-
-menuLinks.forEach(link => {
-  link.addEventListener('click', function (event) {
-    event.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    targetSection.scrollIntoView({
-      behavior: 'smooth',
-    });
-    mobMenuContainer.classList.remove('is-open');
-    document.body.classList.remove('scroll-lock');
-    openMenuBtn.classList.toggle('open');
-    menuOpen = false;
-  });
+  menuOpen = false;
 });
