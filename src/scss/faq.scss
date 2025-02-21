@@ -1,0 +1,99 @@
+.title-faq {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 33px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  border-radius: 20px;
+  padding: 15px 25px;
+  width: 335px;
+  height: 80px;
+  background: #2e4b5d;
+  border: none;
+  text-align: left;
+  transition: 0.4s;
+}
+
+.panel {
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.4s;
+}
+
+.accordion.active img {
+  transform: rotate(180deg);
+}
+
+.acc-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  line-height: 22px;
+  max-width: 335px;
+  max-height: 300px;
+}
+.panel.open {
+  margin-top: 24px;
+  max-height: 500px;
+  overflow-y: auto;
+  transition: 4ms;
+}
+
+.acc-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (min-width: 1200px) {
+  .title-faq {
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    line-height: 65px;
+  }
+  .accordion {
+    font-size: 32px;
+    letter-spacing: 0.03em;
+    width: 1120px;
+  }
+
+  .panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .acc-text {
+    font-size: 24px;
+    letter-spacing: 0.04em;
+    max-width: 1044px;
+    line-height: 33px;
+    max-height: 100px;
+  }
+}
