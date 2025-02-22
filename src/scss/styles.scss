@@ -22,7 +22,7 @@
   font-weight: 400;
   place-items: center;
   color: $_text_color;
-  background-color: $_background_color;
+  background-color: #131d24;
   @include font(16, 22);
   @include media(desktop) {
     font-size: 24px;
@@ -36,6 +36,7 @@
   }
 }
 section {
+  background-color: $_background_color;
   scroll-margin-top: 70px;
   @include media(desktop) {
     scroll-margin-top: 120px;
@@ -61,4 +62,9 @@ header {
 body {
   margin: 0 auto;
   scrollbar-gutter: stable;
+}
+section,
+footer {
+  box-shadow: -10px 0 10px -9px rgba(0, 0, 0, 0.5),
+    10px 0 10px -9px rgba(0, 0, 0, 0.5);
 }
