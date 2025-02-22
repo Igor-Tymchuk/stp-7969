@@ -50,7 +50,9 @@
   width: 100%;
   border: 1px solid #726f6f;
   border-radius: 20px;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
   transition: box-shadow 250ms ease-in-out;
