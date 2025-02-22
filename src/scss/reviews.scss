@@ -1,7 +1,8 @@
 .reviews {
   padding-left: 0;
   padding-right: 0;
-  margin: 0a;
+  margin: 0 auto;
+  width: 100%;
 }
 .reviews-back {
   @include media(desktop) {
