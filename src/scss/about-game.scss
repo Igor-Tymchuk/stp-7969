@@ -14,13 +14,14 @@
     letter-spacing: 0.06em;
     color: #fff;
     text-indent: 20px;
+    line-height: 22px;
   }
 
   .img-about {
     margin-bottom: 24px;
     border-radius: 20px;
     box-shadow: none;
-    width: 335px;
+    max-width: 334px;
     max-height: 301px;
   }
 
@@ -43,12 +44,12 @@
 
   .text-about {
     font-size: 20px;
-    line-height: 33px;
+    line-height: 27px;
   }
 
   .img-about {
     min-width: 477px;
-    max-height: 436px;
+    min-height: 429px;
     margin-bottom: 0;
   }
 
