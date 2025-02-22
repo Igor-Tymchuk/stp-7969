@@ -1,6 +1,7 @@
 @media (min-width: 375px) {
   .title-play {
     margin-bottom: 40px;
+    line-height: 33px;
   }
 
   .small-title-play {
@@ -39,6 +40,7 @@
     flex-direction: column;
     gap: 16px;
     height: 104px;
+    line-height: 22px;
   }
 
   .list-nested-play {
@@ -74,6 +76,7 @@
   .small-title-play {
     font-size: 20px;
     letter-spacing: 0.05em;
+    line-height: 27px;
   }
 
   .img-play {
@@ -96,6 +99,7 @@
     gap: 20px;
     min-height: 108px;
     max-width: 603px;
+    line-height: 27px;
   }
   .element-play {
     display: flex;
@@ -113,5 +117,6 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    line-height: 27px;
   }
 }
