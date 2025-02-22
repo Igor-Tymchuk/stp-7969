@@ -2,8 +2,10 @@ import Swiper from 'swiper';
 import { Keyboard, Mousewheel, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
+let swiper;
+
 window.onload = () => {
-  const swiper = new Swiper('.swiper', {
+  swiper = new Swiper('.swiper', {
     modules: [Keyboard, Mousewheel, Autoplay],
     effect: 'slide',
     grabCursor: true,
@@ -11,8 +13,8 @@ window.onload = () => {
     slidesPerView: 'auto',
     slidesPerGroup: 1,
     loop: true,
-    // initialSlide: 1,
-    // loopedSlides: 4,
+    initialSlide: 1,
+    loopedSlides: 4,
     autoplay: {
       delay: 2500,
       disableOnInteraction: true,
@@ -23,7 +25,7 @@ window.onload = () => {
     mousewheel: {
       thresholdDelta: 70,
     },
-    // observer: true,
-    // observeParents: true,
+    observer: true,
+    observeParents: true,
   });
 };
