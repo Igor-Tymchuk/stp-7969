@@ -13,8 +13,8 @@
 
   .img-play {
     margin-bottom: 24px;
-    width: 335px;
-    height: 301px;
+    max-width: 334px;
+    min-height: 301px;
     border-radius: 20px;
   }
 
@@ -79,7 +79,7 @@
   .img-play {
     margin-bottom: 24px;
     min-width: 477px;
-    height: 429px;
+    max-height: 429px;
     margin-bottom: 0;
   }
 
