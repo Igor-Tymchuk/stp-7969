@@ -11,9 +11,9 @@ window.onload = () => {
     centeredSlides: true,
     slidesPerView: 'auto',
     loop: true,
-    slidesPerGroup: 1,
-    initialSlide: 0,
-    loopedSlides: 4,
+    // slidesPerGroup: 1,
+    // initialSlide: 0,
+    // loopedSlides: 4,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
