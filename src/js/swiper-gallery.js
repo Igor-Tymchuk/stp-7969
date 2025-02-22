@@ -14,6 +14,7 @@ window.onload = () => {
     // slidesPerGroup: 1,
     // initialSlide: 0,
     // loopedSlides: 4,
+    // loopAdditionalSlides: 4,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -30,4 +31,9 @@ window.onload = () => {
   });
 };
 
+const originalConsoleWarn = console.warn;
+console.warn = function (message, ...optionalParams) {
+  if (message.includes('Swiper Loop Warning')) return;
+  originalConsoleWarn.apply(console, [message, ...optionalParams]);
+};
 document.querySelector('.swiper').style.width = '99.999%';
