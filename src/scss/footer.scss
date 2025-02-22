@@ -11,6 +11,7 @@
   max-height: 17px;
   margin-bottom: 11px;
   padding: 0;
+  font-family: 'Lora', sans-serif;
 }
 
 body {
@@ -59,20 +60,18 @@ footer {
       )
       no-repeat center / cover;
     outline: none;
-    border-radius: 12px;
-    border: 1px solid grey;
+    border: 1px solid #726f6f;
+    border-radius: 20px;
     transition: box-shadow 250ms ease-in-out;
   }
   .first-text-footer {
-    font-family: var(--second-family);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.08em;
     color: #fff;
     line-height: 17px;
   }
   .second-text-footer {
-    font-family: var(--second-family);
     font-weight: 500;
     font-size: 11px;
     letter-spacing: 0.09em;
@@ -150,9 +149,7 @@ footer {
         url('/img/icons/googleplay@2x.png') 2x
       )
       no-repeat center / cover;
-    outline: none;
-    border-radius: 16px;
-    border: 1px solid grey;
+
     transition: box-shadow 250ms ease-in-out;
   }
   .first-text-footer {
