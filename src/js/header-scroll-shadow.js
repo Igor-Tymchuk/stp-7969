@@ -7,3 +7,9 @@ window.addEventListener('scroll', () => {
     header.classList.remove('header-scroll');
   }
 });
+
+if (window.scrollY > 100) {
+  header.classList.add('header-scroll');
+} else {
+  header.classList.remove('header-scroll');
+}
