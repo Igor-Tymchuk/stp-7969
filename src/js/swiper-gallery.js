@@ -3,7 +3,6 @@ import { Keyboard, Mousewheel, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 let swiper;
-
 window.onload = () => {
   swiper = new Swiper('.swiper', {
     modules: [Keyboard, Mousewheel, Autoplay],
@@ -11,13 +10,13 @@ window.onload = () => {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
-    slidesPerGroup: 1,
     loop: true,
-    initialSlide: 1,
+    slidesPerGroup: 1,
+    initialSlide: 0,
     loopedSlides: 4,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     keyboard: {
       enabled: true,
@@ -27,5 +26,8 @@ window.onload = () => {
     },
     observer: true,
     observeParents: true,
+    observeSlideChildren: true,
   });
 };
+
+document.querySelector('.swiper').style.width = '99.999%';
