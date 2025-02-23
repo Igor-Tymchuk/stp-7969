@@ -7,7 +7,6 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.remove('hidden');
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
     }
@@ -16,6 +15,8 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 const elements = document.querySelectorAll('.obs');
 
-elements.forEach(element => {
-  observer.observe(element);
+document.addEventListener('DOMContentLoaded', () => {
+  elements.forEach(element => {
+    observer.observe(element);
+  });
 });
