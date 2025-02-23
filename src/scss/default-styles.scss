@@ -1,0 +1,53 @@
+:root {
+  font-family: 'Open Sans', serif;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  place-items: center;
+  color: $_text_color;
+  background-color: #131d24;
+  @include font(16, 22);
+  @include media(desktop) {
+    font-size: 24px;
+    letter-spacing: 0.04em;
+  }
+}
+body {
+  margin: 0 auto;
+  scrollbar-gutter: stable;
+}
+.scroll-lock {
+  overflow: hidden;
+}
+.container {
+  width: 335px;
+  @include media(desktop) {
+    width: 1120px;
+  }
+}
+section {
+  background-color: $_background_color;
+  scroll-margin-top: 70px;
+  @include media(desktop) {
+    scroll-margin-top: 120px;
+  }
+  place-items: center;
+  padding: 0 20px;
+  padding-bottom: 60px;
+  @include media(desktop) {
+    padding: 0 40px;
+    padding-bottom: 80px;
+  }
+}
+header {
+  padding: 0 20px;
+  place-items: center;
+  @include media(desktop) {
+    padding: 0 40px;
+  }
+}
+section,
+footer {
+  box-shadow: -10px 0 10px -9px rgba(0, 0, 0, 0.5),
+    10px 0 10px -9px rgba(0, 0, 0, 0.5);
+}

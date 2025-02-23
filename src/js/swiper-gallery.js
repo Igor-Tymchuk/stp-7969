@@ -36,4 +36,5 @@ console.warn = function (message, ...optionalParams) {
   if (message.includes('Swiper Loop Warning')) return;
   originalConsoleWarn.apply(console, [message, ...optionalParams]);
 };
+
 document.querySelector('.swiper').style.width = '99.999%';
