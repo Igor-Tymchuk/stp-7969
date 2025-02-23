@@ -37,4 +37,4 @@ console.warn = function (message, ...optionalParams) {
   originalConsoleWarn.apply(console, [message, ...optionalParams]);
 };
 
-document.querySelector('.swiper').style.width = '99.999%';
+document.querySelector('.swiper').style.width = '99.88%';
