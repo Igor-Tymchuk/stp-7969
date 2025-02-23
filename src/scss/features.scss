@@ -1,48 +1,49 @@
-@media (min-width: 375px) {
-  .title-features {
-    line-height: 33px;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 24px;
-    letter-spacing: 0.04em;
-    color: #fff;
-    margin-bottom: 40px;
-  }
-  .list-features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-  }
-  .element-features {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 335px;
-    height: 219px;
-  }
+.title-features {
+  line-height: 33px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 40px;
+}
 
-  .small-title-features {
-    margin-bottom: 8px;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 0.06em;
-    color: #fff;
-    margin-top: 20px;
-    line-height: 25px;
-  }
-  .text-features {
-    text-align: center;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.06em;
-    color: #fff;
-    line-height: 22px;
-  }
+.list-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.element-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 335px;
+  height: 219px;
+}
+
+.small-title-features {
+  margin-bottom: 8px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.text-features {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  line-height: 22px;
 }
 
 @media (min-width: 1200px) {
@@ -51,6 +52,7 @@
     letter-spacing: 0.02em;
     line-height: 65px;
   }
+
   .list-features {
     display: flex;
     flex-direction: row;
@@ -62,6 +64,7 @@
     column-gap: 80px;
     max-width: 1120px;
   }
+
   .element-features {
     max-width: 300px;
     min-height: 261px;
@@ -73,6 +76,7 @@
     letter-spacing: 0.04em;
     line-height: 33px;
   }
+
   .text-features {
     font-size: 18px;
     line-height: 25px;
