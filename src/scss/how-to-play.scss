@@ -59,6 +59,34 @@
   min-height: 132px;
 }
 
+.element-play {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-play.visible {
+  animation: fadeInQuick 1.2s ease-out forwards;
+}
+
+@keyframes fadeInQuick {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.element-play.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
 @media (min-width: 375px) {
   .title-play {
     margin-bottom: 40px;
