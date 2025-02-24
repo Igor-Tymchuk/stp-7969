@@ -18,9 +18,7 @@
 
 .img-about {
   max-width: 100%;
-  height: auto;
-  margin-bottom: 16px;
-  border-radius: 15px;
+
   box-shadow: none;
 }
 
@@ -37,13 +35,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+
   opacity: 0;
   transform: translateY(20px);
 }
 
 .element-about.visible {
   animation: fadeInQuick 1.2s ease-out forwards;
+}
+
+.all-text-about {
+  margin-top: 16px;
 }
 
 @keyframes fadeInQuick {
@@ -64,40 +66,33 @@
 .all-text-about {
   font-size: 14px;
   letter-spacing: 0.04em;
+  margin-top: 24px;
 }
 
 @media (min-width: 375px) {
   .title-about {
     margin-bottom: 40px;
     line-height: 33px;
-    font-weight: 700;
     font-size: 24px;
-    letter-spacing: 0.04em;
   }
 
   .text-about {
-    font-family: var(--font-family);
-    font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.06em;
-    color: #fff;
+
     text-indent: 20px;
     line-height: 22px;
   }
 
   .img-about {
-    margin-bottom: 24px;
     border-radius: 20px;
-    box-shadow: none;
-    max-width: 334px;
-    max-height: 301px;
+
+    max-width: 335px;
+    height: 301px;
+    min-height: 301px;
   }
 
   .list-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: 24px;
   }
 }
@@ -127,11 +122,9 @@
   }
 
   .element-about {
-    display: flex;
     flex-direction: row;
     max-width: 1120px;
-    justify-content: center;
-    align-items: center;
+
     gap: 40px;
   }
 
