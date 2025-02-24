@@ -18,8 +18,7 @@
 
 .img-about {
   max-width: 100%;
-  height: auto;
-  margin-bottom: 16px;
+
   border-radius: 15px;
   box-shadow: none;
 }
@@ -29,7 +28,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 16px;
 }
 
 .element-about {
@@ -37,13 +35,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+
   opacity: 0;
   transform: translateY(20px);
 }
 
 .element-about.visible {
   animation: fadeInQuick 1.2s ease-out forwards;
+}
+
+.all-text-about {
+  margin-top: 16px;
 }
 
 @keyframes fadeInQuick {
@@ -64,6 +66,7 @@
 .all-text-about {
   font-size: 14px;
   letter-spacing: 0.04em;
+  margin-top: 24px;
 }
 
 @media (min-width: 375px) {
@@ -86,11 +89,11 @@
   }
 
   .img-about {
-    margin-bottom: 24px;
     border-radius: 20px;
     box-shadow: none;
-    max-width: 334px;
-    max-height: 301px;
+    max-width: 335px;
+    height: 301px;
+    min-height: 301px;
   }
 
   .list-about {
