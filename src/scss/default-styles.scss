@@ -5,7 +5,6 @@
   font-weight: 400;
   place-items: center;
   color: $_text_color;
-  font-display: swap;
   background-color: #131d24;
   @include font(16, 22);
   @include media(desktop) {
