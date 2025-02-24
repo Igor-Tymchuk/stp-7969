@@ -6,6 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  will-change: transform, opacity;
   @include media(desktop) {
     padding-top: 215px;
     padding-bottom: 80px;
