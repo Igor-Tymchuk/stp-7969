@@ -1,10 +1,15 @@
-.title-features {
-  line-height: 33px;
+.title-features,
+.small-title-features,
+.text-features {
   font-family: var(--font-family);
+  color: #fff;
+}
+
+.title-features {
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.04em;
-  color: #fff;
+  line-height: 33px;
   margin-bottom: 40px;
 }
 
@@ -26,23 +31,18 @@
 }
 
 .small-title-features {
-  margin-bottom: 8px;
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.06em;
-  color: #fff;
-  margin-top: 20px;
   line-height: 25px;
+  margin: 20px 0 8px;
 }
 
 .text-features {
   text-align: center;
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.06em;
-  color: #fff;
   line-height: 22px;
 }
 
@@ -54,11 +54,8 @@
   }
 
   .list-features {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     height: 582px;
     row-gap: 60px;
     column-gap: 80px;
@@ -71,7 +68,6 @@
   }
 
   .small-title-features {
-    margin-bottom: 8px;
     font-size: 24px;
     letter-spacing: 0.04em;
     line-height: 33px;
