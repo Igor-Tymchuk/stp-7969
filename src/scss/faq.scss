@@ -1,9 +1,14 @@
-.title-faq {
+.title-faq,
+.accordion,
+.acc-text {
   font-family: var(--font-family);
+  color: #fff;
+}
+
+.title-faq {
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.04em;
-  color: #fff;
   margin-bottom: 40px;
   line-height: 33px;
 }
@@ -14,11 +19,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 11px;
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.06em;
-  color: #fff;
   border-radius: 20px;
   padding: 15px 25px;
   width: 335px;
@@ -26,7 +29,7 @@
   background: #2e4b5d;
   border: none;
   text-align: left;
-  transition: 0.4s;
+  transition: 0.1s;
 }
 
 .panel {
@@ -52,11 +55,9 @@
 }
 
 .acc-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.06em;
-  color: #fff;
   line-height: 22px;
   max-width: 335px;
   max-height: 300px;
@@ -76,6 +77,7 @@
     letter-spacing: 0.02em;
     line-height: 65px;
   }
+
   .accordion {
     font-size: 32px;
     letter-spacing: 0.03em;
