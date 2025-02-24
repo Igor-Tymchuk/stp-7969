@@ -91,8 +91,9 @@
   .img-about {
     border-radius: 20px;
     box-shadow: none;
-    max-width: 334px;
-    max-height: 301px;
+    max-width: 335px;
+    height: 301px;
+    min-height: 301px;
   }
 
   .list-about {
