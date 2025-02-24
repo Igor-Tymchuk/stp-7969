@@ -58,7 +58,7 @@
   align-items: start;
   flex-direction: column;
   gap: 16px;
-  min-height: 132px;
+  min-height: 126px;
 }
 
 .element-play {
@@ -110,6 +110,7 @@
   .text-play {
     font-size: 20px;
     letter-spacing: 0.05em;
+    line-height: 27px;
   }
 
   .list-play {
@@ -118,9 +119,15 @@
 
   .element-nested-play {
     gap: 20px;
-    min-height: 108px;
+    max-height: 101px;
     max-width: 603px;
     line-height: 27px;
+  }
+
+  .element-nested-play1 {
+    min-height: 101px;
+    line-height: 27px;
+    gap: 20px;
   }
 
   .element-play {
@@ -139,6 +146,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    line-height: 27px;
+
+    margin-top: 0;
   }
 }
